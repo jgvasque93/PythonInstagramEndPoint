@@ -20,7 +20,7 @@ def getEndpoint(idUser):
 			info.append('')
 		followersCount=json.dumps(res.json()['user']['follower_count'])
 		followingCount=json.dumps(res.json()['user']['following_count'])
-		username=json.dumps(res.json()['user']['username'])
+		username=json.dumps(res.json()['user']['username']).replace('\"','')
 		info.append(username)
 		info.append(followersCount)
 		info.append(followingCount) 
