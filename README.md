@@ -1,3 +1,5 @@
 "# PythonInstagramEndPoint" 
 
-libreria de python para instagram InstagramAPI
+libreria de python para instagram----> InstagramAPI
+
+pip install InstagramAPI
