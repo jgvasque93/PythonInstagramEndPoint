@@ -48,8 +48,8 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                         if(rp):
                             contadorLikes=contadorLikes+1
                         print('likes para hashtag:',hashtag,contadorLikes,item['code'])
-                        #esperamos 25 segundos para no excder el limite de likes de instagram de 100 por hora
-                        time.sleep(25)
+                        #esperamos 50 segundos para no excder el limite de likes de instagram de 100 por hora
+                        time.sleep(50)
                         #obtenemos la fecha y la comparamos con la fecha de corte 
                         ts=int(item['taken_at'])
                         fecha=datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
@@ -72,7 +72,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                             if(rp):
                                 contadorLikes=contadorLikes+1
                             print('commnets para hashtag:',hashtag,contadorLikes,item['code'])
-                            time.sleep(25)
+                            time.sleep(50)
                             ts=int(item['taken_at'])
                             fecha=datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
                             dtfechaD=datetime.strptime(fecha.split(' ')[0], "%Y-%m-%d")
@@ -102,4 +102,4 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
 
 listaComments=['buena publicacion amigo mira mi perfil con posts de la misma tematica','check my profile','good photo']
 ListHashtag=['follow_me','followforfollowback','followme']
-commentsByHashtag(ListHashtag,'2019-05-03',user,pwd)
+commentsByHashtag(ListHashtag,'2019-05-24',user,pwd)
