@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 import sys
 import random
-user = 'USER'
-pwd = 'PASSWORD'
+user = 'itbearyoutube'
+pwd = 'bombillo2019'
 
 def commentsByHashtag(ListHashtag,fechatest,user,pwd):
     #login en el Api de instagram
@@ -33,7 +33,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                     # g nos indica si hubo un error en el API al hacer la consulta
                     while g==False:
                         #esperamos un tiempo entre 150 y 270 segundos para volver a consultar
-                        n = randint(50,90)
+                        n = random.randint(50,90)
                         time.sleep(3*n)
                         g = API.getHashtagFeed(hashtag,next_max_id)
                         temp = API.LastJson
@@ -49,7 +49,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                             contadorLikes=contadorLikes+1
                         print('likes para hashtag:',hashtag,contadorLikes,item['code'])
                         #esperamos 50 segundos para no excder el limite de likes de instagram de 100 por hora
-                        time.sleep(50)
+                        time.sleep(30)
                         #obtenemos la fecha y la comparamos con la fecha de corte 
                         ts=int(item['taken_at'])
                         fecha=datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
@@ -72,7 +72,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                             if(rp):
                                 contadorLikes=contadorLikes+1
                             print('commnets para hashtag:',hashtag,contadorLikes,item['code'])
-                            time.sleep(50)
+                            time.sleep(30)
                             ts=int(item['taken_at'])
                             fecha=datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
                             dtfechaD=datetime.strptime(fecha.split(' ')[0], "%Y-%m-%d")
@@ -100,6 +100,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
             print(e)
 
 
-listaComments=['buena publicacion amigo mira mi perfil con posts de la misma tematica','check my profile','good photo']
-ListHashtag=['follow_me','followforfollowback','followme']
-commentsByHashtag(ListHashtag,'2019-05-24',user,pwd)
+listaComments=['I have a course of python and Instagram , check my profile','course of python + instagram , check muy profile','good photo,check my profile','check my profile','good photo','check my first photo of python , instagram course free','instagram course free, check my profile']
+ListHashtag=['pycoders','pythonprogramming','programmer','programmerslife','programming','programminglife','opensource','learntocode']
+commentsByHashtag(ListHashtag,'2019-05-26',user,pwd)
+ 
