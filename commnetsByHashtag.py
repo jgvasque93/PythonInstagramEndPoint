@@ -89,7 +89,7 @@ def commentsByHashtag(ListHashtag,fechatest,user,pwd):
                     #comprbamos si tenemos mas paginas por visitar
                     if temp["more_available"] == False:
                         next_max_id = False
-                        return 0
+                        break
                     #comenzamos el proceso de nuevo
                     next_max_id = temp["next_max_id"]
                     g = API.getHashtagFeed(hashtag,next_max_id)
