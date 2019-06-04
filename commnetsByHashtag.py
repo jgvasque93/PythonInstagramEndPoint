@@ -3,8 +3,8 @@ import time
 from datetime import datetime
 import sys
 import random
-user = 'itbearyoutube'
-pwd = 'bombillo2019'
+user = 'user'
+pwd = 'password'
 
 def commentsByHashtag(ListHashtag,fechatest,user,pwd):
     #login en el Api de instagram

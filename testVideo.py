@@ -29,8 +29,8 @@ def unfollow(username,pwd,listFollower,LitsFollowing):
         time.sleep(3)
  
 
-username = 'testingroxana02'
-pwd = 'awesome6'
+username = 'user'
+pwd = 'password'
 s1=getFollowing.getFollowing(username,pwd)
 s2=getFollower.getFollower(username,pwd)
 unfollow(username,pwd,s2,s1)
