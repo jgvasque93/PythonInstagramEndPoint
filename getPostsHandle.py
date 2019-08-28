@@ -7,7 +7,9 @@ from random import randint
 import pandas as pd
 user = 'user'
 pwd = 'password'
-
+#user_id  = '41864127'
+#   user_id  = '25758869'
+#user_id='857021616'
 def writeCSV(posts,user_id):
     header=[]
     header.append('username')
@@ -103,5 +105,5 @@ API = InstagramAPI(user,pwd)
 API.login()
 listaUsername=['itbearyoutube']
 for x in listaUsername:
-    getTimeline(str(x),'2019-07-01',API)
+    getTimeline(str(x),'2019-05-01',API)
     time.sleep(4)
