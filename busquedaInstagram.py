@@ -104,7 +104,7 @@ if __name__ == '__main__':
     username=''
     pwd=''
     typo='hashtag'
-    queries=['covid']
+    queries=['covid2']
     main(username,pwd,typo,queries)
     typo='user'
     queries=['covid']
