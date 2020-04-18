@@ -5,8 +5,8 @@ import random
 import sys
 from random import randint
 import pandas as pd
-user = 'newsnow_07'
-pwd = 'bombillo2018'
+user = 'user'
+pwd = 'PASSWORD'
 #user_id  = '41864127'
 #   user_id  = '25758869'
 #user_id='857021616'

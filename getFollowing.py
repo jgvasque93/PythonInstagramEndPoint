@@ -38,6 +38,6 @@ def getFollowing(username,pwd,handle):
     thefile = open('C:/Users/jordy/Desktop/backup/ProyectoMavenRoad/instagram/' + handle+'.txt', 'w')              
     thefile.write("\n".join(map(lambda x: str(x), followers)))
     thefile.close() 
-username='itbearyoutube'
-pwd='bombillo2019'
+username='User'
+pwd='PASSWORD'
 getFollowing(username,pwd,'matt_horwitz')

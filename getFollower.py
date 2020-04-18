@@ -52,29 +52,8 @@ def getFollower(username,pwd,handle):
     thefile = open('C:/Users/jordy/Desktop/backup/ProyectoMavenRoad/instagram/' + handle+'.txt', 'w')
     thefile.write("\n".join(map(lambda x: str(x), followers)))
     thefile.close() 
-username='joshuabarr5'
-pwd='jbarr123'
-getFollower(username,pwd,'musiciansfriend')
-getFollower(username,pwd,'zzoundsmusic')
-getFollower(username,pwd,'monstersessions')
-getFollower(username,pwd,'damemonster')
-getFollower(username,pwd,'nyusteinhardtmusic')
-getFollower(username,pwd,'nyusteinhardtvp')
-getFollower(username,pwd,'nyumusictech')
-getFollower(username,pwd,'nyumusicbiz')
-getFollower(username,pwd,'nyumusiced')
-getFollower(username,pwd,'nycmusicians')
-getFollower(username,pwd,'vassarcollege')
-getFollower(username,pwd,'colgateuniversity')
-getFollower(username,pwd,'nyusteinhardt')
-getFollower(username,pwd,'inflightmusicgroup')
-getFollower(username,pwd,'hunnypotlive')
-getFollower(username,pwd,'revival.la')
-getFollower(username,pwd,'diamondminestudios')
-getFollower(username,pwd,'endure_studios')
-getFollower(username,pwd,'skylinestudios')
-getFollower(username,pwd,'solidstatelogic')
-getFollower(username,pwd,'RRFConnection')
+username='User'
+pwd='Password'
 
 
 
